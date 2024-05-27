@@ -9,11 +9,16 @@ return {
       colorscheme = "gruvbox",
     },
   },
-
-  -- change trouble config
+  -- TS
   {
-    "folke/trouble.nvim",
-    -- opts will be merged with the parent spec
-    opts = { use_diagnostic_signs = true },
+    "pmizio/typescript-tools.nvim",
+    dependencies = { "nvim-lua/plenary.nvim", "neovim/nvim-lspconfig" },
+    opts = {},
+  },
+  {
+    "ahmedkhalf/project.nvim",
+    opts = {
+      manual_mode = false,
+    },
   },
 }
