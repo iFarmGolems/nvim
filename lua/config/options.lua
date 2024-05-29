@@ -3,5 +3,8 @@
 -- Add any additional options here
 
 if vim.g.neovide then
+  -- cd to /home/patrik folder by default
+  vim.cmd("cd /home/patrik/develop/repos")
+
   vim.o.guifont = "Comic Code Ligatures:h12"
 end
