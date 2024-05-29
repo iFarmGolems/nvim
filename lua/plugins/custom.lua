@@ -36,4 +36,9 @@ return {
       manual_mode = false,
     },
   },
+  {
+    "iFarmGolems/deploy.nvim",
+    dependencies = { "nvim-lua/plenary.nvim" },
+    dir = "~/develop/repos/deploy.nvim",
+  },
 }
