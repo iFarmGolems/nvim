@@ -40,5 +40,8 @@ return {
     "iFarmGolems/deploy.nvim",
     dependencies = { "nvim-lua/plenary.nvim" },
     dir = "~/develop/repos/deploy.nvim",
+    config = function()
+      require("deploy").setup()
+    end,
   },
 }
