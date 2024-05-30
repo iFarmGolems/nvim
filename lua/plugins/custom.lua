@@ -46,7 +46,14 @@ return {
           },
         },
         hosts = {
-          { host = "10.111.8.1", label = "Grecko" },
+          {
+            host = "10.111.8.1",
+            label = "Grecko",
+          },
+          {
+            host = "10.111.250.93",
+            label = "Referencna CLDB",
+          },
         },
       })
     end,
