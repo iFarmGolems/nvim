@@ -49,10 +49,12 @@ return {
           {
             host = "10.111.8.1",
             label = "Grecko",
+            username = "root",
           },
           {
             host = "10.111.250.93",
             label = "Referencna CLDB",
+            username = "root",
           },
         },
       })
