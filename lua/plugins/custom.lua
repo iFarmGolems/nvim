@@ -38,7 +38,17 @@ return {
     dependencies = { "nvim-lua/plenary.nvim" },
     dir = "~/develop/repos/deploy.nvim",
     config = function()
-      require("deploy").setup()
+      require("deploy").setup({
+        mapping = {
+          {
+            fs = "/home/patrik/develop/repos/mis/sw/ims/ims4/Web/src/main/webapp",
+            remote = "/opt/ims/tomcat/webapps/ims",
+          },
+        },
+        hosts = {
+          { host = "10.111.8.1", label = "Grecko" },
+        },
+      })
     end,
   },
 }
