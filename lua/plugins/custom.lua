@@ -39,6 +39,8 @@ return {
     dir = "~/develop/repos/deploy.nvim",
     config = function()
       require("deploy").setup({
+        honor_gitignore = true,
+        tool = "rsync",
         mapping = {
           {
             fs = "/home/patrik/develop/repos/mis/sw/ims/ims4/Web/src/main/webapp",
