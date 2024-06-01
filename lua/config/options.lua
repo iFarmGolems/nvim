@@ -9,3 +9,9 @@ if vim.g.neovide then
   -- font https://neovide.dev/configuration.html?highlight=font#display
   vim.o.guifont = "Comic Code Ligatures:h12"
 end
+
+-- vim.opt.autoindent = true
+-- vim.opt.smartindent = true
+vim.opt.tabstop = 2
+vim.opt.shiftwidth = 2
+vim.opt.expandtab = false
