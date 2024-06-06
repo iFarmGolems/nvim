@@ -10,6 +10,9 @@ if vim.g.neovide then
   vim.o.guifont = "Comic Code Ligatures:h12"
 end
 
+vim.opt.termguicolors = true
+vim.g.gruvbox_baby_comment_style = "NONE"
+
 -- vim.opt.autoindent = true
 -- vim.opt.smartindent = true
 vim.opt.tabstop = 2
