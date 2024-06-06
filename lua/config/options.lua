@@ -8,10 +8,12 @@ if vim.g.neovide then
 
   -- font https://neovide.dev/configuration.html?highlight=font#display
   vim.o.guifont = "Comic Code Ligatures:h12"
+  vim.g.neovide_transparency = 0.95
 end
 
 vim.opt.termguicolors = true
 vim.g.gruvbox_baby_comment_style = "NONE"
+-- vim.g.gruvbox_baby_transparent_mode = true
 
 -- vim.opt.autoindent = true
 -- vim.opt.smartindent = true
