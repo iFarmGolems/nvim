@@ -19,6 +19,7 @@ return {
           ["textDocument/publishDiagnostics"] = function(err, res, ctx, config)
             local isJS = res.uri:sub(-3) == ".js"
 
+            -- do not show diagnostics for js files
             if isJS then
               res.diagnostics = {}
             end
