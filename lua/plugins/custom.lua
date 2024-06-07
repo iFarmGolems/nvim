@@ -1,7 +1,7 @@
 return {
   { "ellisonleao/gruvbox.nvim" },
   { "savq/melange-nvim" },
-  { "luisiacc/gruvbox-baby" },
+  { "luisiacc/gruvbox-baby", branch = "main" },
   {
     "LazyVim/LazyVim",
     opts = {
