@@ -1,11 +1,39 @@
 return {
-  { "ellisonleao/gruvbox.nvim" },
+  {
+    "ellisonleao/gruvbox.nvim",
+    config = function()
+      require("gruvbox").setup({
+        terminal_colors = true, -- add neovim terminal colors
+        undercurl = true,
+        underline = true,
+        bold = true,
+        italic = {
+          strings = false,
+          emphasis = true,
+          comments = false,
+          operators = false,
+          folds = true,
+        },
+        strikethrough = true,
+        invert_selection = false,
+        invert_signs = false,
+        invert_tabline = false,
+        invert_intend_guides = false,
+        inverse = true, -- invert background for search, diffs, statuslines and errors
+        contrast = "hard", -- can be "hard", "soft" or empty string
+        palette_overrides = {},
+        overrides = {},
+        dim_inactive = false,
+        transparent_mode = false,
+      })
+    end,
+  },
   { "savq/melange-nvim" },
   { "luisiacc/gruvbox-baby", branch = "main" },
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "gruvbox-baby",
+      colorscheme = "gruvbox",
     },
   },
   {
@@ -17,10 +45,13 @@ return {
       require("typescript-tools").setup({
         handlers = {
           ["textDocument/publishDiagnostics"] = function(err, res, ctx, config)
-            local isJS = res.uri:sub(-3) == ".js"
+            local js_extensions = { "js", "mjs" }
 
-            -- do not show diagnostics for js files
-            if isJS then
+            local is_js = vim.iter(js_extensions):any(function(ext)
+              return vim.fn.fnamemodify(res.uri, ":e") == ext
+            end)
+
+            if is_js then
               res.diagnostics = {}
             end
 
