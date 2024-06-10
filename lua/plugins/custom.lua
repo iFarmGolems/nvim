@@ -1,4 +1,6 @@
 return {
+  -- { "savq/melange-nvim" },
+  -- { "luisiacc/gruvbox-baby", branch = "main" },
   {
     "ellisonleao/gruvbox.nvim",
     config = function()
@@ -28,14 +30,13 @@ return {
       })
     end,
   },
-  { "savq/melange-nvim" },
-  { "luisiacc/gruvbox-baby", branch = "main" },
   {
     "LazyVim/LazyVim",
     opts = {
       colorscheme = "gruvbox",
     },
   },
+  -- this causes issues
   { "nvim-treesitter/nvim-treesitter", opts = { indent = { enable = false } } },
   {
     "lukas-reineke/indent-blankline.nvim",
