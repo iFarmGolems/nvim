@@ -8,13 +8,17 @@ if vim.g.neovide then
 
   -- font https://neovide.dev/configuration.html?highlight=font#display
   vim.o.guifont = "Comic Code Ligatures,ComicShannsMono Nerd Font Mono:h12"
-  vim.g.neovide_transparency = 0.97
+  vim.g.neovide_transparency = 0.98
+  vim.g.neovide_refresh_rate_idle = 5
 end
+
+vim.opt.linespace = 2
+vim.opt.autoindent = true
 
 vim.g.gruvbox_baby_comment_style = "NONE"
 vim.opt.termguicolors = true
+vim.opt.list = false
 
--- vim.opt.autoindent = true
 -- vim.opt.smartindent = true
 -- vim.opt.tabstop = 2
 -- vim.opt.shiftwidth = 2
