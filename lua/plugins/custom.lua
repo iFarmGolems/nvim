@@ -36,7 +36,12 @@ return {
       colorscheme = "gruvbox",
     },
   },
-  { "akinsho/bufferline.nvim", opts = { options = { always_show_bufferline = true } } },
+  { "nvim-treesitter/nvim-treesitter", opts = { indent = { enable = false } } },
+  {
+    "lukas-reineke/indent-blankline.nvim",
+    opts = { enabled = false },
+  },
+  -- { "tris203/precognition.nvim", event = "VeryLazy", config = {} },
   {
     "pmizio/typescript-tools.nvim",
     dependencies = { "nvim-lua/plenary.nvim", "neovim/nvim-lspconfig" },
