@@ -36,6 +36,7 @@ return {
       colorscheme = "gruvbox",
     },
   },
+  { "folke/zen-mode.nvim" },
   -- this causes issues
   { "nvim-treesitter/nvim-treesitter", opts = { indent = { enable = false } } },
   {
