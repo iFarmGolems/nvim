@@ -7,7 +7,7 @@ if vim.g.neovide then
   vim.cmd("cd /home/patrik/develop/repos")
 
   -- font https://neovide.dev/configuration.html?highlight=font#display
-  vim.o.guifont = "Comic Code Ligatures,ComicShannsMono Nerd Font Mono:h12"
+  vim.o.guifont = "Comic Code Ligatures:h12"
   vim.g.neovide_transparency = 0.98
   vim.g.neovide_refresh_rate_idle = 5
 end
