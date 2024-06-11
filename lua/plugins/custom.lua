@@ -37,8 +37,18 @@ return {
     },
   },
   { "folke/zen-mode.nvim" },
-  -- this causes issues
+  -- treesitter indent causes issues
   { "nvim-treesitter/nvim-treesitter", opts = { indent = { enable = false } } },
+  {
+    "nvim-lualine/lualine.nvim",
+    opts = function(_, opts)
+      opts.sections.lualine_z = {
+        function()
+          return "Deploy on save: " .. (vim.g.DEPLOY_ON_SAVE and "ON" or "OFF")
+        end,
+      }
+    end,
+  },
   {
     "lukas-reineke/indent-blankline.nvim",
     opts = { enabled = false },
