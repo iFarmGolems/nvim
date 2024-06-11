@@ -106,6 +106,11 @@ return {
             username = "root",
           },
           {
+            host = "10.111.9.31",
+            label = "SHMU AWD DEV",
+            username = "root",
+          },
+          {
             host = "10.111.250.93",
             label = "Referencna CLDB",
             username = "root",
