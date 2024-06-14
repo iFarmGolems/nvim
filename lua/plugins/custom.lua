@@ -1,6 +1,4 @@
 return {
-  -- { "savq/melange-nvim" },
-  -- { "luisiacc/gruvbox-baby", branch = "main" },
   {
     "ellisonleao/gruvbox.nvim",
     config = function()
