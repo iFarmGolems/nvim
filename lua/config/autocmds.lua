@@ -3,9 +3,9 @@
 -- Add any additional autocmds here
 
 vim.cmd([[
-  autocmd FileType javascript setlocal colorcolumn=80
+  autocmd FileType javascript setlocal colorcolumn=81
 ]])
 
 vim.cmd([[
-  autocmd FileType markdown setlocal colorcolumn=80
+  autocmd FileType markdown setlocal colorcolumn=81
 ]])
