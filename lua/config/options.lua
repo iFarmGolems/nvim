@@ -12,7 +12,7 @@ if vim.g.neovide then
   vim.g.neovide_refresh_rate_idle = 5
 end
 
-vim.opt.linespace = 2
+-- vim.opt.linespace = 2
 vim.opt.autoindent = true
 
 vim.g.gruvbox_baby_comment_style = "NONE"
