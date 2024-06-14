@@ -92,6 +92,7 @@ return {
     dependencies = { "nvim-lua/plenary.nvim" },
     config = function()
       require("deploy").setup({
+        timeout = 3,
         honor_gitignore = true,
         tool = "rsync",
         mapping = {
@@ -114,6 +115,11 @@ return {
           {
             host = "10.111.250.93",
             label = "Referencna CLDB",
+            username = "root",
+          },
+          {
+            host = "10.111.8.22",
+            label = "LQBK AWOS DEV",
             username = "root",
           },
         },
