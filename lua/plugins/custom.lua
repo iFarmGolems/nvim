@@ -81,7 +81,7 @@ return {
     "ahmedkhalf/project.nvim",
     opts = function(_, opts)
       opts.manual_mode = false
-      opts.detection_methods = {}
+      opts.silent_chdir = false
     end,
   },
   {
