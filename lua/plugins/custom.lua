@@ -80,9 +80,10 @@ return {
   },
   {
     "ahmedkhalf/project.nvim",
-    opts = {
-      manual_mode = false,
-    },
+    opts = function(_, opts)
+      opts.manual_mode = false
+      opts.detection_methods = {}
+    end,
   },
   {
     "iFarmGolems/deploy.nvim",
