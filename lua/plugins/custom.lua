@@ -67,6 +67,7 @@ return {
               return vim.fn.fnamemodify(res.uri, ":e") == ext
             end)
 
+            -- strip diagnostics for js files
             if is_js then
               res.diagnostics = {}
             end
