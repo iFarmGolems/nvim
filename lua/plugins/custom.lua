@@ -52,7 +52,6 @@ return {
     "lukas-reineke/indent-blankline.nvim",
     opts = { enabled = false },
   },
-  -- { "tris203/precognition.nvim", event = "VeryLazy", config = {} },
   {
     "pmizio/typescript-tools.nvim",
     dependencies = { "nvim-lua/plenary.nvim", "neovim/nvim-lspconfig" },
