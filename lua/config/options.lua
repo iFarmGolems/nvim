@@ -13,6 +13,7 @@ if vim.g.neovide then
 end
 
 -- vim.opt.linespace = 2
+vim.o.tabstop = 2
 vim.opt.autoindent = true
 
 vim.g.gruvbox_baby_comment_style = "NONE"
