@@ -85,6 +85,9 @@ return {
       opts.silent_chdir = true
     end,
   },
+  { "garymjr/nvim-snippets", opts = {
+    search_paths = { vim.fn.stdpath("config") .. "/snippets" },
+  } },
   {
     "iFarmGolems/deploy.nvim",
     dir = "~/develop/repos/deploy.nvim",
