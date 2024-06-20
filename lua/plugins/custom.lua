@@ -53,32 +53,6 @@ return {
     opts = { enabled = false },
   },
   {
-    "pmizio/typescript-tools.nvim",
-    dependencies = { "nvim-lua/plenary.nvim", "neovim/nvim-lspconfig" },
-    config = function()
-      -- local lspconfig = require('lspconfig')
-
-      require("typescript-tools").setup({
-        handlers = {
-          ["textDocument/publishDiagnostics"] = function(err, res, ctx, config)
-            local js_extensions = { "js", "mjs" }
-
-            local is_js = vim.iter(js_extensions):any(function(ext)
-              return vim.fn.fnamemodify(res.uri, ":e") == ext
-            end)
-
-            -- strip diagnostics for js files
-            if is_js then
-              res.diagnostics = {}
-            end
-
-            vim.lsp.diagnostic.on_publish_diagnostics(err, res, ctx, config)
-          end,
-        },
-      })
-    end,
-  },
-  {
     "ahmedkhalf/project.nvim",
     opts = function(_, opts)
       opts.manual_mode = false
