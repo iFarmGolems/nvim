@@ -1,9 +1,21 @@
 return {
   {
     "neovim/nvim-lspconfig",
-    event = "VeryLazy",
-    opts = function(_, opts)
-      print("hello")
-    end,
+    opts = {
+      servers = {
+        vtsls = {
+          settings = {
+            javascript = {
+              suggest = {
+                names = false,
+                paths = false,
+                autoImports = false,
+                includeCompletionsForImportStatements = false,
+              },
+            },
+          },
+        },
+      },
+    },
   },
 }
