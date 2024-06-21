@@ -37,7 +37,7 @@ return {
         enabled = true,
         auto_trigger = true,
         keymap = {
-          accept = "<C-y>",
+          accept = "<Tab>",
         },
       },
       panel = { enabled = false },
