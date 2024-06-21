@@ -60,6 +60,17 @@ return {
     end,
   },
   {
+    "hrsh7th/nvim-cmp",
+    opts = function(_, opts)
+      opts.sources = vim
+        .iter(opts.sources)
+        :filter(function(source)
+          return source.name ~= "buffer"
+        end)
+        :totable()
+    end,
+  },
+  {
     "zbirenbaum/copilot.lua",
     event = "InsertEnter",
     opts = {
