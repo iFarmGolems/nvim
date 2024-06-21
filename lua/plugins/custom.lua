@@ -60,6 +60,24 @@ return {
     end,
   },
   {
+    "zbirenbaum/copilot.lua",
+    event = "InsertEnter",
+    opts = {
+      suggestion = {
+        enabled = true,
+        auto_trigger = true,
+        keymap = {
+          accept = "<C-y>",
+        },
+      },
+      panel = { enabled = false },
+    },
+  },
+  {
+    "zbirenbaum/copilot-cmp",
+    enabled = false,
+  },
+  {
     "iFarmGolems/deploy.nvim",
     dir = "~/develop/repos/deploy.nvim",
     dependencies = { "nvim-lua/plenary.nvim" },
