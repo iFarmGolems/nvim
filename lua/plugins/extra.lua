@@ -67,6 +67,11 @@ return {
             label = "LQBK AWOS DEV",
             username = "root",
           },
+          {
+            host = "10.111.8.23",
+            label = "Bosnia Geo Dev",
+            username = "root",
+          },
         },
       })
     end,
