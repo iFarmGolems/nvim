@@ -3,5 +3,13 @@
     "prefix": "log",
     "body": ["console.log('$1');", "$2"],
     "description": "Log output to console"
+  },
+  "Inline JSDOC": {
+    "prefix": "ijsdoc",
+    "body": "/** @$1 {$2} $3 */"
+  },
+  "JSDOC": {
+    "prefix": "jsdoc",
+    "body": ["/**", " * $1", " *", " * @$2 {$3}", " * @$4 {$5}", " */"]
   }
 }
