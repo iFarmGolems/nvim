@@ -36,11 +36,10 @@ return {
         enabled = true,
         auto_trigger = true,
         keymap = {
-          accept = "<Tab>",
+          accept = "<C-l>",
         },
       },
       panel = { enabled = false },
-      copilot_node_command = "bun",
     },
   },
   {
