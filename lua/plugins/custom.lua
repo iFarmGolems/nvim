@@ -40,6 +40,7 @@ return {
         },
       },
       panel = { enabled = false },
+      copilot_node_command = "bun",
     },
   },
   {
