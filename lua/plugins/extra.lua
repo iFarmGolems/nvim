@@ -32,6 +32,21 @@ return {
   { "folke/zen-mode.nvim" },
 
   {
+    "chrisgrieser/nvim-rip-substitute",
+    cmd = "RipSubstitute",
+    keys = {
+      {
+        "<leader>fs",
+        function()
+          require("rip-substitute").sub()
+        end,
+        mode = { "n", "x" },
+        desc = " rip substitute",
+      },
+    },
+  },
+
+  {
     "iFarmGolems/deploy.nvim",
     dir = "~/develop/repos/deploy.nvim",
     dependencies = { "nvim-lua/plenary.nvim" },
