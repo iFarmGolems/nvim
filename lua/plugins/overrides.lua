@@ -1,10 +1,4 @@
 return {
-  {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "gruvbox",
-    },
-  },
   -- treesitter indent causes issues
   { "nvim-treesitter/nvim-treesitter", opts = { indent = { enable = false } } },
   {
@@ -28,22 +22,22 @@ return {
       opts.silent_chdir = true
     end,
   },
-  {
-    "zbirenbaum/copilot.lua",
-    event = "InsertEnter",
-    opts = {
-      suggestion = {
-        enabled = true,
-        auto_trigger = true,
-        keymap = {
-          accept = "<C-l>",
-        },
-      },
-      panel = { enabled = false },
-    },
-  },
-  {
-    "zbirenbaum/copilot-cmp",
-    enabled = false,
-  },
+  -- {
+  --   "zbirenbaum/copilot.lua",
+  --   event = "InsertEnter",
+  --   opts = {
+  --     suggestion = {
+  --       enabled = true,
+  --       auto_trigger = true,
+  --       keymap = {
+  --         accept = "<C-l>",
+  --       },
+  --     },
+  --     panel = { enabled = false },
+  --   },
+  -- },
+  -- {
+  --   "zbirenbaum/copilot-cmp",
+  --   enabled = false,
+  -- },
 }
