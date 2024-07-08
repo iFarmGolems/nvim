@@ -1,6 +1,7 @@
 return {
   -- treesitter indent causes issues
   { "nvim-treesitter/nvim-treesitter", opts = { indent = { enable = false } } },
+
   {
     "nvim-lualine/lualine.nvim",
     opts = function(_, opts)
@@ -11,10 +12,12 @@ return {
       }
     end,
   },
+
   {
     "lukas-reineke/indent-blankline.nvim",
     opts = { enabled = false },
   },
+
   {
     "ahmedkhalf/project.nvim",
     opts = function(_, opts)
@@ -22,22 +25,4 @@ return {
       opts.silent_chdir = true
     end,
   },
-  -- {
-  --   "zbirenbaum/copilot.lua",
-  --   event = "InsertEnter",
-  --   opts = {
-  --     suggestion = {
-  --       enabled = true,
-  --       auto_trigger = true,
-  --       keymap = {
-  --         accept = "<C-l>",
-  --       },
-  --     },
-  --     panel = { enabled = false },
-  --   },
-  -- },
-  -- {
-  --   "zbirenbaum/copilot-cmp",
-  --   enabled = false,
-  -- },
 }
