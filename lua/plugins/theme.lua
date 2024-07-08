@@ -1,3 +1,5 @@
+local color_scheme = "gruvbox"
+
 return {
   {
     "ellisonleao/gruvbox.nvim",
@@ -29,17 +31,14 @@ return {
     end,
   },
   -- { "luisiacc/gruvbox-baby", branch = "main" },
-  -- {
-  --   "ptdewey/darkearth-nvim",
-  -- },
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "gruvbox",
+      colorscheme = color_scheme,
     },
   },
   {
     "nvim-lualine/lualine.nvim",
-    opts = { theme = "gruvbox" },
+    opts = { theme = color_scheme },
   },
 }
