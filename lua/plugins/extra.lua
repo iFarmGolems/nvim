@@ -18,13 +18,6 @@ return {
   },
 
   {
-    "supermaven-inc/supermaven-nvim",
-    config = function()
-      require("supermaven-nvim").setup({})
-    end,
-  },
-
-  {
     "iFarmGolems/deploy.nvim",
     dir = "~/develop/repos/deploy.nvim",
     dependencies = { "nvim-lua/plenary.nvim" },
