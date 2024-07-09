@@ -9,6 +9,7 @@ if vim.g.neovide then
   -- font https://neovide.dev/configuration.html?highlight=font#display
   vim.o.guifont = "Comic Code Ligatures:h12"
   vim.g.neovide_transparency = 0.98
+  -- vim.g.neovide_cursor_animation_length = 0
 end
 
 -- vim.opt.linespace = 2

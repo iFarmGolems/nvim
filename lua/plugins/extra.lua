@@ -17,6 +17,14 @@ return {
     },
   },
 
+  -- add mini.animate
+  -- {
+  --   "echasnovski/mini.animate",
+  --   config = function()
+  --     require("mini.animate").setup({ scroll = { enable = false } })
+  --   end,
+  -- },
+
   {
     "iFarmGolems/deploy.nvim",
     dir = "~/develop/repos/deploy.nvim",
