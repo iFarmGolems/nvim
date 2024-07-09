@@ -32,7 +32,6 @@ return {
       kind_filter = {
         default = {
           "Class",
-          "Constant", -- add this
           "Constructor",
           "Enum",
           "Field",
@@ -45,7 +44,9 @@ return {
           "Property",
           "Struct",
           "Trait",
-          "Variable", -- add this
+          -- add these to symbol search
+          "Constant",
+          "Variable",
         },
       },
     },
