@@ -3,35 +3,12 @@ return {
   { "folke/zen-mode.nvim" },
 
   {
-    "chrisgrieser/nvim-rip-substitute",
-    cmd = "RipSubstitute",
-    keys = {
-      {
-        "<C-h>",
-        function()
-          require("rip-substitute").sub()
-        end,
-        mode = { "n", "x" },
-        desc = " rip substitute",
-      },
-    },
-  },
-
-  -- add mini.animate
-  -- {
-  --   "echasnovski/mini.animate",
-  --   config = function()
-  --     require("mini.animate").setup({ scroll = { enable = false } })
-  --   end,
-  -- },
-
-  {
     "iFarmGolems/deploy.nvim",
     dir = "~/develop/repos/deploy.nvim",
     dependencies = { "nvim-lua/plenary.nvim" },
     config = function()
       require("deploy").setup({
-        timeout = 3,
+        timeout = 5,
         honor_gitignore = true,
         tool = "rsync",
         mapping = {
