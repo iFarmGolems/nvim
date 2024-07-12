@@ -2,6 +2,18 @@
 -- Default options that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/options.lua
 -- Add any additional options here
 
+local function read_json_file(path)
+  local file = io.open(path, "r")
+  if file then
+    local content = file:read("*all")
+    file:close()
+    local obj = vim.fn.json_decode(content)
+    return obj
+  else
+    return {}
+  end
+end
+
 if vim.g.neovide then
   -- cd to /home/patrik folder by default
   vim.cmd("cd ~")
