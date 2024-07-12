@@ -4,12 +4,14 @@
 
 local function read_json_file(path)
   local file = io.open(path, "r")
+
   if file then
     local content = file:read("*all")
     file:close()
     local obj = vim.fn.json_decode(content)
     return obj
   else
+    print("Local flags not found: " .. path)
     return {}
   end
 end
@@ -25,9 +27,13 @@ if vim.g.neovide then
   vim.o.guifont = "Comic Code Ligatures:h12:#e-subpixelantialias"
   -- vim.g.neovide_transparency = 0.98
 
+  local flags = read_json_file(vim.fn.expand("~/.config/nvim/local_flags.json"))
+
   -- animations
-  vim.g.neovide_cursor_animation_length = 0
-  vim.g.neovide_scroll_animation_length = 0
+  if not flags.animations then
+    vim.g.neovide_cursor_animation_length = 0
+    vim.g.neovide_scroll_animation_length = 0
+  end
 end
 
 -- vim.opt.linespace = 2
