@@ -2,7 +2,7 @@
 -- Default options that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/options.lua
 -- Add any additional options here
 
-local function read_json_file(path)
+local function read_json(path)
   local file = io.open(path, "r")
 
   if file then
@@ -27,7 +27,7 @@ if vim.g.neovide then
   vim.o.guifont = "Comic Code Ligatures:h12:#e-subpixelantialias"
   -- vim.g.neovide_transparency = 0.98
 
-  local flags = read_json_file(vim.fn.expand("~/.config/nvim/local_flags.json"))
+  local flags = read_json(vim.fn.expand("~/.config/nvim/local_flags.json"))
 
   -- animations
   if not flags.animations then
