@@ -1,7 +1,3 @@
--- Options are automatically loaded before lazy.nvim startup
--- Default options that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/options.lua
--- Add any additional options here
-
 local function read_json(path)
   local file = io.open(path, "r")
 
@@ -11,7 +7,6 @@ local function read_json(path)
     local obj = vim.fn.json_decode(content)
     return obj
   else
-    print("Local flags not found: " .. path)
     return {}
   end
 end
@@ -24,7 +19,7 @@ if vim.g.neovide then
   vim.g.neovide_refresh_rate_idle = 5
 
   -- font https://neovide.dev/configuration.html?highlight=font#display
-  vim.o.guifont = "Comic Code Ligatures:h12:#e-subpixelantialias"
+  vim.o.guifont = "Comic Code Ligatures:h12"
   -- vim.g.neovide_transparency = 0.98
 
   local flags = read_json(vim.fn.expand("~/.config/nvim/local_flags.json"))
