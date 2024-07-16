@@ -16,7 +16,6 @@ if vim.g.neovide then
   vim.cmd("cd ~")
 
   vim.g.neovide_fullscreen = true
-  vim.g.neovide_refresh_rate_idle = 5
 
   -- font https://neovide.dev/configuration.html?highlight=font#display
   vim.o.guifont = "Comic Code Ligatures:h12"
@@ -29,6 +28,8 @@ if vim.g.neovide then
     vim.g.neovide_cursor_animation_length = 0
     vim.g.neovide_scroll_animation_length = 0
   end
+
+  vim.api.nvim_set_keymap("n", "<F11>", ":let g:neovide_fullscreen = !g:neovide_fullscreen<CR>", {})
 end
 
 -- vim.opt.linespace = 2
