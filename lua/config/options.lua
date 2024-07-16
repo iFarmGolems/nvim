@@ -20,7 +20,7 @@ if vim.g.neovide then
 
   -- font https://neovide.dev/configuration.html?highlight=font#display
   vim.o.guifont = "Comic Code Ligatures:h12"
-  -- vim.g.neovide_transparency = 0.98
+  vim.g.neovide_transparency = 0.98
 
   local flags = read_json(vim.fn.expand("~/.config/nvim/local_flags.json"))
 
