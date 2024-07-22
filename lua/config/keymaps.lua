@@ -2,8 +2,7 @@
 vim.keymap.set("n", "x", '"_x')
 
 -- grug-far overrides
-vim.keymap.del("n", "<leader>sr")
-vim.keymap.del("v", "<leader>sr")
+vim.keymap.del({ "n", "v" }, "<leader>sr")
 
 -- normal mode
 vim.keymap.set("n", "<leader>sri", function()
