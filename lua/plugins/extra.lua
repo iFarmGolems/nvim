@@ -2,6 +2,8 @@ return {
 
   { "folke/zen-mode.nvim" },
 
+  { "lukas-reineke/virt-column.nvim", opts = {} },
+
   {
     "iFarmGolems/deploy.nvim",
     dir = "~/develop/repos/deploy.nvim",
