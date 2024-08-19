@@ -1,6 +1,20 @@
 local color_scheme = "gruvbox"
 
 return {
+  -- {
+  --   "ribru17/bamboo.nvim",
+  --   lazy = false,
+  --   priority = 1000,
+  --   config = function()
+  --     require("bamboo").setup({
+  --       style = "multiplex",
+  --       code_style = {
+  --         comments = { italic = false },
+  --       },
+  --     })
+  --     require("bamboo").load()
+  --   end,
+  -- },
   {
     "ellisonleao/gruvbox.nvim",
     config = function()
