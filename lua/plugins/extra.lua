@@ -5,6 +5,15 @@ return {
   { "lukas-reineke/virt-column.nvim", opts = {} },
 
   {
+    "OXY2DEV/helpview.nvim",
+    lazy = false, -- Recommended
+
+    dependencies = {
+      "nvim-treesitter/nvim-treesitter",
+    },
+  },
+
+  {
     "iFarmGolems/deploy.nvim",
     dir = "~/develop/repos/deploy.nvim",
     dependencies = { "nvim-lua/plenary.nvim" },
