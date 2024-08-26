@@ -50,7 +50,7 @@ return {
             username = "root",
           },
           {
-            host = "10.111.8.23",
+            host = "192.168.111.23",
             label = "Bosnia Geo Dev",
             username = "root",
           },
