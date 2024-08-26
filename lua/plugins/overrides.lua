@@ -27,6 +27,13 @@ return {
   },
 
   {
+    "ibhagwan/fzf-lua",
+    opts = function(_, opts)
+      opts.files.actions["default"] = require("fzf-lua.actions").file_edit
+    end,
+  },
+
+  {
     "LazyVim/LazyVim",
     opts = {
       kind_filter = {
