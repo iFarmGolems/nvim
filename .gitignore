@@ -7,4 +7,4 @@ foo.*
 *.log
 data
 local_flags.json
-lazy-lock.json
+lazy-lock.js
