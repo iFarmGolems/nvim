@@ -32,7 +32,6 @@ if vim.g.neovide then
   vim.api.nvim_set_keymap("n", "<F11>", ":let g:neovide_fullscreen = !g:neovide_fullscreen<CR>", {})
 end
 
--- vim.opt.linespace = 2
 vim.o.tabstop = 2
 vim.opt.autoindent = true
 
