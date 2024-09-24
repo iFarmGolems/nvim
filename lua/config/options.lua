@@ -41,3 +41,4 @@ vim.g.grubbox_baby_background_color = "dark"
 
 vim.opt.termguicolors = true
 vim.opt.list = false
+vim.opt.colorcolumn = "81"
