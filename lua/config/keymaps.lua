@@ -6,13 +6,13 @@ vim.keymap.del({ "n", "v" }, "<leader>sr")
 
 -- normal mode
 vim.keymap.set("n", "<leader>sri", function()
-  require("grug-far").grug_far({ prefills = { search = vim.fn.expand("<cword>"), flags = vim.fn.expand("%") } })
+  require("grug-far").open({ prefills = { search = vim.fn.expand("<cword>"), flags = vim.fn.expand("%") } })
 end, {
   desc = "Replace current word in current file",
 })
 
 vim.keymap.set("n", "<leader>sra", function()
-  require("grug-far").grug_far({ prefills = { search = vim.fn.expand("<cword>") } })
+  require("grug-far").open({ prefills = { search = vim.fn.expand("<cword>") } })
 end, {
   desc = "Replace current word in all files",
 })
