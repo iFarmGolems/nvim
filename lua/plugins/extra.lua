@@ -19,7 +19,7 @@ return {
     dependencies = { "nvim-lua/plenary.nvim" },
     config = function()
       require("deploy").setup({
-        timeout = 5,
+        timeout = 10,
         honor_gitignore = true,
         tool = "rsync",
         mapping = {
