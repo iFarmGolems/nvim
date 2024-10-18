@@ -14,8 +14,24 @@ return {
           root_dir = function(...)
             return nvim_lsp.util.root_pattern("deno.jsonc", "deno.json")(...)
           end,
+          settings = {
+            deno = {
+              offset_encoding = "utf-8",
+              enable = true,
+              lint = true,
+              unstable = true,
+              suggest = {
+                imports = {
+                  hosts = {
+                    ["https://deno.land"] = true,
+                  },
+                },
+              },
+            },
+          },
         },
         vtsls = {
+          single_file_support = false,
           root_dir = nvim_lsp.util.root_pattern("package.json"),
           settings = {
             javascript = {
