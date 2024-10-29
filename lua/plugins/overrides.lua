@@ -24,6 +24,7 @@ return {
     opts = function(_, opts)
       opts.manual_mode = false
       opts.silent_chdir = false
+      opts.ignore_lsp = { "jsonls" }
     end,
   },
 
