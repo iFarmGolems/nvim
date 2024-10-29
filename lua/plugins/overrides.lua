@@ -25,6 +25,7 @@ return {
       opts.manual_mode = false
       opts.silent_chdir = false
       opts.ignore_lsp = { "jsonls" }
+      opts.patterns = { "package.json" }
     end,
   },
 
