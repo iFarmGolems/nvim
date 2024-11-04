@@ -18,7 +18,7 @@ if vim.g.neovide then
   vim.g.neovide_fullscreen = true
 
   -- font https://neovide.dev/configuration.html?highlight=font#display
-  vim.o.guifont = "Comic Code Ligatures:h12"
+  vim.o.guifont = "Comic Code Ligatures:h11"
   vim.g.neovide_transparency = 0.98
 
   local flags = read_json(vim.fn.expand("~/.config/nvim/local_flags.json"))
