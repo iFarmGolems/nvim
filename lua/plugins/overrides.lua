@@ -24,7 +24,7 @@ return {
     opts = function(_, opts)
       opts.manual_mode = false
       opts.silent_chdir = false
-      opts.ignore_lsp = { "jsonls" }
+      opts.ignore_lsp = { "jsonls", "eslint" }
       opts.patterns = { "package.json", "tsconfig.json", "jsconfig.json" }
     end,
   },
