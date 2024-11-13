@@ -30,28 +30,13 @@ return {
         },
         hosts = {
           {
-            host = "10.111.8.1",
-            label = "Grecko",
-            username = "root",
-          },
-          {
-            host = "10.111.9.31",
-            label = "SHMU AWD DEV",
-            username = "root",
-          },
-          {
-            host = "10.111.250.93",
-            label = "Referencna CLDB",
-            username = "root",
-          },
-          {
-            host = "10.111.8.22",
-            label = "LQBK AWOS DEV",
-            username = "root",
-          },
-          {
             host = "192.168.111.23",
             label = "Bosnia Geo Dev",
+            username = "root",
+          },
+          {
+            host = "172.18.1.235",
+            label = "Bosnia Geo PROD",
             username = "root",
           },
         },
