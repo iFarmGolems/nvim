@@ -30,7 +30,7 @@ return {
         },
         hosts = {
           {
-            host = "192.168.111.23",
+            host = "10.111.8.26",
             label = "Bosnia Geo Dev",
             username = "root",
           },

@@ -17,14 +17,14 @@ return {
   --   "zbirenbaum/copilot-cmp",
   --   enabled = false,
   -- },
-  {
-    "supermaven-inc/supermaven-nvim",
-    config = function()
-      require("supermaven-nvim").setup({
-        keymaps = {
-          accept_suggestion = "<C-l>",
-        },
-      })
-    end,
-  },
+  -- {
+  --   "supermaven-inc/supermaven-nvim",
+  --   config = function()
+  --     require("supermaven-nvim").setup({
+  --       keymaps = {
+  --         accept_suggestion = "<C-l>",
+  --       },
+  --     })
+  --   end,
+  -- },
 }
