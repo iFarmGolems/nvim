@@ -30,13 +30,6 @@ return {
   },
 
   {
-    "saghen/blink.cmp",
-    opts = function(_, opts)
-      opts.windows.ghost_text = false
-    end,
-  },
-
-  {
     "ibhagwan/fzf-lua",
     opts = function(_, opts)
       opts.files.actions["default"] = require("fzf-lua.actions").file_edit
