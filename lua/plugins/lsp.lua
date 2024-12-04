@@ -1,9 +1,6 @@
 local nvim_lsp = require("lspconfig")
 
 return {
-  { "hrsh7th/nvim-cmp", opts = {
-    completion = { autocomplete = false },
-  } },
   {
     "neovim/nvim-lspconfig",
     opts = {
