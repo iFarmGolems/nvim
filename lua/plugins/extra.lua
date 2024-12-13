@@ -33,6 +33,11 @@ return {
             username = "root",
           },
           {
+            host = "10.111.8.23",
+            label = "Bosnia Geo INT",
+            username = "root",
+          },
+          {
             host = "172.18.1.235",
             label = "Bosnia Geo PROD",
             username = "root",
