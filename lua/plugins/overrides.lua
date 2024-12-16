@@ -15,11 +15,6 @@ return {
   },
 
   {
-    "lukas-reineke/indent-blankline.nvim",
-    opts = { enabled = false },
-  },
-
-  {
     "ahmedkhalf/project.nvim",
     opts = function(_, opts)
       opts.manual_mode = false
