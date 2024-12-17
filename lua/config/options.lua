@@ -1,15 +1,4 @@
-local function read_json(path)
-  local file = io.open(path, "r")
-
-  if file then
-    local content = file:read("*all")
-    file:close()
-    local obj = vim.fn.json_decode(content)
-    return obj
-  else
-    return {}
-  end
-end
+local utils = require("helpers.utils")
 
 if vim.g.neovide then
   -- cd to /home/patrik folder by default
@@ -21,7 +10,7 @@ if vim.g.neovide then
   vim.o.guifont = "Comic Code Ligatures:h11"
   vim.g.neovide_transparency = 0.98
 
-  local flags = read_json(vim.fn.expand("~/.config/nvim/local_flags.json"))
+  local flags = utils.read_json(vim.fn.expand("~/.config/nvim/local_flags.json"))
 
   -- animations
   if not flags.animations then

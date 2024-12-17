@@ -16,34 +16,16 @@ return {
     dir = "~/develop/repos/deploy.nvim",
     dependencies = { "nvim-lua/plenary.nvim" },
     config = function()
-      require("deploy").setup({
+      local utils = require("helpers.utils")
+      local deployConfig = utils.read_json(vim.fn.expand("~/.config/nvim/deploy.json"))
+
+      local deployOpts = {
         timeout = 10,
         honor_gitignore = true,
         tool = "rsync",
-        mapping = {
-          {
-            fs = "/home/patrik/develop/repos/mis/sw/ims/ims4/Web/src/main/webapp",
-            remote = "/opt/ims/tomcat/webapps/ims",
-          },
-        },
-        hosts = {
-          {
-            host = "10.111.8.26",
-            label = "Bosnia Geo Dev",
-            username = "root",
-          },
-          {
-            host = "10.111.8.23",
-            label = "Bosnia Geo INT",
-            username = "root",
-          },
-          {
-            host = "172.18.1.235",
-            label = "Bosnia Geo PROD",
-            username = "root",
-          },
-        },
-      })
+      }
+
+      require("deploy").setup(vim.tbl_extend("force", deployOpts, deployConfig))
     end,
   },
 }
