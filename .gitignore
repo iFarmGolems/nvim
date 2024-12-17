@@ -8,3 +8,4 @@ foo.*
 data
 local_flags.json
 lazy-lock.json
+deploy.json
