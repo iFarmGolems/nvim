@@ -33,6 +33,7 @@ vim.opt.termguicolors = true
 vim.opt.list = false
 vim.opt.colorcolumn = "81"
 
+-- User Commands ---------------------------------------------------------------
 vim.api.nvim_create_user_command("CopyPath", function()
   local git_root = vim.fn.systemlist("git rev-parse --show-toplevel")[1]
   local file_path = vim.fn.expand("%:p")
