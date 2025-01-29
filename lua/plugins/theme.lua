@@ -15,6 +15,15 @@ return {
   --     require("bamboo").load()
   --   end,
   -- },
+  -- { "Yazeed1s/oh-lucy.nvim" },
+  -- { "timmyha/henna.nvim" },
+  -- {
+  --   "wtfox/jellybeans.nvim",
+  --   priority = 1000,
+  --   config = function()
+  --     require("jellybeans").setup()
+  --   end,
+  -- },
   {
     "ellisonleao/gruvbox.nvim",
     config = function()
