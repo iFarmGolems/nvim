@@ -15,6 +15,11 @@ return {
   },
 
   {
+    "echasnovski/mini.pairs",
+    enabled = false,
+  },
+
+  {
     "ahmedkhalf/project.nvim",
     opts = function(_, opts)
       opts.manual_mode = false
