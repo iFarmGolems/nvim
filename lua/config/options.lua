@@ -22,6 +22,7 @@ if vim.g.neovide then
 end
 
 vim.g.snacks_animate = false
+vim.g.ai_cmp = false
 
 vim.o.tabstop = 2
 vim.opt.autoindent = true
