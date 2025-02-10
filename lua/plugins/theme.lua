@@ -26,6 +26,7 @@ return {
   -- },
   {
     "ellisonleao/gruvbox.nvim",
+    branch = "main",
     config = function()
       require("gruvbox").setup({
         dim_inactive = false,
