@@ -41,8 +41,8 @@ return {
   {
     "stevearc/conform.nvim",
     opts = function(_, opts)
-      table.insert(opts.formatters_by_ft["javascript"], "eslint_d")
-      table.insert(opts.formatters_by_ft["typescript"], "eslint_d")
+      opts.formatters_by_ft.javascript = { "eslint_d", "prettier" }
+      opts.formatters_by_ft.typescript = { "eslint_d", "prettier" }
     end,
   },
 
