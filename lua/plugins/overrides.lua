@@ -39,6 +39,31 @@ return {
   },
 
   {
+    "stevearc/conform.nvim",
+    opts = function(_, opts)
+      table.insert(opts.formatters_by_ft["javascript"], "eslint_d")
+      table.insert(opts.formatters_by_ft["typescript"], "eslint_d")
+    end,
+  },
+
+  {
+    "mfussenegger/nvim-lint",
+    opts = function(_, opts)
+      local linters_by_ft = opts.linters_by_ft
+
+      linters_by_ft.javascript = { "eslint_d" }
+      linters_by_ft.typescript = { "eslint_d" }
+    end,
+  },
+
+  {
+    "williamboman/mason.nvim",
+    opts = function(_, opts)
+      table.insert(opts.ensure_installed, "eslint_d")
+    end,
+  },
+
+  {
     "folke/snacks.nvim",
     opts = function(_, opts)
       opts.indent = { enabled = false }

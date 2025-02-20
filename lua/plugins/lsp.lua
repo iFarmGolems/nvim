@@ -6,22 +6,38 @@ return {
     opts = {
       inlay_hints = { enabled = false },
       servers = {
-        eslint = {
-          root_dir = function(...)
-            return nvim_lsp.util.root_pattern(
-              "eslint.config.js",
-              "eslint.config.mjs",
-              "eslint.config.cjs",
-              "eslint.config.ts",
-              "eslint.config.mts",
-              "eslint.config.cts",
-              ".eslintrc.js",
-              ".eslintrc.yaml",
-              ".eslintrc.yml",
-              ".eslintrc.json"
-            )(...)
-          end,
-        },
+        -- eslint = {
+        --   root_dir = function(...)
+        --     return nvim_lsp.util.root_pattern(
+        --       "eslint.config.js",
+        --       "eslint.config.mjs",
+        --       "eslint.config.cjs",
+        --       "eslint.config.ts",
+        --       "eslint.config.mts",
+        --       "eslint.config.cts",
+        --       ".eslintrc.js",
+        --       ".eslintrc.yaml",
+        --       ".eslintrc.yml",
+        --       ".eslintrc.json"
+        --     )(...)
+        --   end,
+        -- },
+        -- eslint_d = {
+        --   root_dir = function(...)
+        --     return nvim_lsp.util.root_pattern(
+        --       "eslint.config.js",
+        --       "eslint.config.mjs",
+        --       "eslint.config.cjs",
+        --       "eslint.config.ts",
+        --       "eslint.config.mts",
+        --       "eslint.config.cts",
+        --       ".eslintrc.js",
+        --       ".eslintrc.yaml",
+        --       ".eslintrc.yml",
+        --       ".eslintrc.json"
+        --     )(...)
+        --   end,
+        -- },
         denols = {
           filetypes = { "typescript", "typescriptreact" },
           root_dir = function(...)
