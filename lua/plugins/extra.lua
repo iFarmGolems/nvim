@@ -13,7 +13,6 @@ return {
 
   {
     "iFarmGolems/lab.nvim",
-    dir = "~/develop/repos/lab.nvim",
     dependencies = { "nvim-lua/plenary.nvim" },
     config = function()
       require("lab").setup({
