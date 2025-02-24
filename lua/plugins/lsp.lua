@@ -69,6 +69,7 @@ return {
                 paths = false,
                 autoImports = false,
                 includeCompletionsForImportStatements = false,
+                completeFunctionCalls = false,
               },
             },
           },

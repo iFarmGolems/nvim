@@ -15,8 +15,10 @@ return {
   },
 
   {
-    "echasnovski/mini.pairs",
-    enabled = false,
+    "saghen/blink.cmp",
+    opts = function(_, opts)
+      opts.completion.accept.auto_brackets.enabled = false
+    end,
   },
 
   {
