@@ -73,6 +73,19 @@ return {
   },
 
   {
+    "CopilotC-Nvim/CopilotChat.nvim",
+    opts = function(_, opts)
+      opts.sticky = {
+        "No JS build step.",
+        "Scripts are included via script tags.",
+        "'fp' variable is lodash/fp.",
+        "'ol' variable is openlayers.",
+        "JS Libs versions: Vue 2.7.16 (Composition API), Chart.js 3.9.1, OpenLayers 10.x, Lodash/fp 4.17.10",
+      }
+    end,
+  },
+
+  {
     "LazyVim/LazyVim",
     opts = {
       kind_filter = {
