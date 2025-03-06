@@ -25,7 +25,6 @@ return {
 
   {
     "iFarmGolems/deploy.nvim",
-    dir = "~/develop/repos/deploy.nvim",
     dependencies = { "nvim-lua/plenary.nvim" },
     config = function()
       local utils = require("helpers.utils")
