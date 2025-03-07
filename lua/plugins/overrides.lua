@@ -75,6 +75,7 @@ return {
   {
     "CopilotC-Nvim/CopilotChat.nvim",
     opts = function(_, opts)
+      opts.model = "claude-3.7-sonnet"
       opts.sticky = {
         "No JS build step.",
         "Scripts are included via script tags.",
