@@ -79,7 +79,7 @@ return {
       opts.sticky = {
         "No JS build step, scripts are included via script tags.",
         "'fp' variable is lodash/fp.",
-        "JS Libs versions: Vue 2.7.16 (Composition API), Chart.js 3.9.1, OpenLayers 10.x, Lodash/fp 4.17.10",
+        "JS Libs versions: Vue 2.7.16 (Composition API), Chart.js 3.9.1, OpenLayers 10.x, Lodash/fp 4.17.10. For other libraries assume latest version.",
         "Always consider YAGNI + SOLID + KISS + DRY principles when designing or adding new code.",
       }
     end,
