@@ -77,11 +77,10 @@ return {
     opts = function(_, opts)
       opts.model = "claude-3.7-sonnet"
       opts.sticky = {
-        "No JS build step.",
-        "Scripts are included via script tags.",
+        "No JS build step, scripts are included via script tags.",
         "'fp' variable is lodash/fp.",
-        "'ol' variable is openlayers.",
         "JS Libs versions: Vue 2.7.16 (Composition API), Chart.js 3.9.1, OpenLayers 10.x, Lodash/fp 4.17.10",
+        "Always consider YAGNI + SOLID + KISS + DRY principles when designing or adding new code.",
       }
     end,
   },
