@@ -40,30 +40,45 @@ return {
     end,
   },
 
-  {
-    "stevearc/conform.nvim",
-    opts = function(_, opts)
-      opts.formatters_by_ft.javascript = { "eslint_d", "prettier" }
-      opts.formatters_by_ft.typescript = { "eslint_d", "prettier" }
-    end,
-  },
+  -- {
+  --   "stevearc/conform.nvim",
+  --   opts = function(_, opts)
+  --     opts.formatters_by_ft.javascript = { "eslint_d", "prettier" }
+  --     opts.formatters_by_ft.typescript = { "eslint_d", "prettier" }
+  --   end,
+  -- },
 
-  {
-    "mfussenegger/nvim-lint",
-    opts = function(_, opts)
-      local linters_by_ft = opts.linters_by_ft
+  -- {
+  --   "mfussenegger/nvim-lint",
+  --   opts = function(_, opts)
+  --     local linters_by_ft = opts.linters_by_ft
+  --
+  --     linters_by_ft.javascript = { "eslint_d" }
+  --     linters_by_ft.typescript = { "eslint_d" }
+  --
+  --     opts.linters = {
+  --       eslint_d = {
+  --         args = {
+  --           "--no-warn-ignored", -- <-- this is the key argument
+  --           "--format",
+  --           "json",
+  --           "--stdin",
+  --           "--stdin-filename",
+  --           function()
+  --             return vim.api.nvim_buf_get_name(0)
+  --           end,
+  --         },
+  --       },
+  --     }
+  --   end,
+  -- },
 
-      linters_by_ft.javascript = { "eslint_d" }
-      linters_by_ft.typescript = { "eslint_d" }
-    end,
-  },
-
-  {
-    "williamboman/mason.nvim",
-    opts = function(_, opts)
-      table.insert(opts.ensure_installed, "eslint_d")
-    end,
-  },
+  -- {
+  --   "williamboman/mason.nvim",
+  --   opts = function(_, opts)
+  --     table.insert(opts.ensure_installed, "eslint_d")
+  --   end,
+  -- },
 
   {
     "folke/snacks.nvim",
