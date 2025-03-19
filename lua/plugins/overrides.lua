@@ -50,7 +50,7 @@ return {
   {
     "CopilotC-Nvim/CopilotChat.nvim",
     opts = function(_, opts)
-      opts.model = "claude-3.7-sonnet"
+      opts.model = "gemini-2.0-flash-001"
       opts.sticky = {
         "No JS build step, scripts are included via script tags.",
         "'fp' variable is lodash/fp.",
