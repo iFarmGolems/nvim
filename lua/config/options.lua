@@ -10,14 +10,6 @@ if vim.g.neovide then
   vim.o.guifont = "Comic Code Ligatures:h11"
   -- vim.g.neovide_transparency = 0.98
 
-  local flags = utils.read_json(vim.fn.expand("~/.config/nvim/local_flags.json"))
-
-  -- animations
-  if not flags.animations then
-    vim.g.neovide_cursor_animation_length = 0
-    vim.g.neovide_scroll_animation_length = 0
-  end
-
   vim.api.nvim_set_keymap("n", "<F11>", ":let g:neovide_fullscreen = !g:neovide_fullscreen<CR>", {})
 end
 
