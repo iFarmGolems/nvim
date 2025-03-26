@@ -39,13 +39,4 @@ return {
       require("deploy").setup(vim.tbl_extend("force", deployOpts, deployConfig))
     end,
   },
-
-  -- {
-  --   "olimorris/codecompanion.nvim",
-  --   dependencies = {
-  --     "nvim-lua/plenary.nvim",
-  --     "nvim-treesitter/nvim-treesitter",
-  --   },
-  --   config = true,
-  -- },
 }
