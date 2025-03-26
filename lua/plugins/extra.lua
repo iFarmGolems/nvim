@@ -12,18 +12,6 @@ return {
   },
 
   {
-    "iFarmGolems/lab.nvim",
-    dependencies = { "nvim-lua/plenary.nvim" },
-    config = function()
-      require("lab").setup({
-        quick_data = {
-          enabled = false,
-        },
-      })
-    end,
-  },
-
-  {
     "iFarmGolems/deploy.nvim",
     dependencies = { "nvim-lua/plenary.nvim" },
     config = function()
