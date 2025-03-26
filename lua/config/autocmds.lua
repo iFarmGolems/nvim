@@ -7,5 +7,9 @@ vim.cmd([[
 ]])
 
 vim.cmd([[
+  autocmd FileType typescript setlocal colorcolumn=81
+]])
+
+vim.cmd([[
   autocmd FileType markdown setlocal colorcolumn=81
 ]])
