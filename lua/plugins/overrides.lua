@@ -49,6 +49,7 @@ return {
 
   {
     "CopilotC-Nvim/CopilotChat.nvim",
+    build = "make tiktoken",
     opts = function(_, opts)
       opts.model = "gemini-2.0-flash-001"
       opts.sticky = {
@@ -60,6 +61,7 @@ return {
       }
     end,
   },
+
   { "zbirenbaum/copilot.lua", opts = {
     copilot_model = "gpt-4o-copilot",
   } },
