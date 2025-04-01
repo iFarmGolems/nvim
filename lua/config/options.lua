@@ -1,7 +1,4 @@
-local utils = require("helpers.utils")
-
 if vim.g.neovide then
-  -- cd to /home/patrik folder by default
   vim.cmd("cd ~")
 
   vim.g.neovide_fullscreen = true
@@ -18,9 +15,6 @@ vim.g.ai_cmp = false
 
 vim.o.tabstop = 2
 vim.opt.autoindent = true
-
-vim.g.gruvbox_baby_comment_style = "NONE"
-vim.g.grubbox_baby_background_color = "dark"
 
 -- vim.opt.termguicolors = true
 vim.opt.list = false
