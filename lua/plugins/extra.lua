@@ -15,16 +15,23 @@ return {
     "iFarmGolems/deploy.nvim",
     dependencies = { "nvim-lua/plenary.nvim" },
     config = function()
-      local utils = require("helpers.utils")
-      local deployConfig = utils.read_json(vim.fn.expand("~/.config/nvim/deploy.json"))
-
-      local deployOpts = {
+      require("deploy").setup({
         timeout = 10,
         honor_gitignore = true,
         tool = "rsync",
-      }
-
-      require("deploy").setup(vim.tbl_extend("force", deployOpts, deployConfig))
+        hosts = {
+          {
+            host = "10.111.8.26",
+            label = "Bosna 1025 DEV",
+          },
+        },
+        mapping = {
+          {
+            fs = "/home/patrik/develop/repos/mis/sw/ims/ims4/Web/src/main/webapp",
+            remote = "/opt/ims/tomcat/webapps/ims",
+          },
+        },
+      })
     end,
   },
 }
