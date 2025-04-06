@@ -1,0 +1,7 @@
+# Windows: %LOCALAPPDATA%\Roaming\neovide\config.toml
+[font]
+size = 11
+normal = ["Comic Code Ligatures"] # Will use the bundled Fira Code Nerd Font by default
+
+[box-drawing]
+mode = "font-glyph"
