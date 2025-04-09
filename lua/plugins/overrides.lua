@@ -51,7 +51,6 @@ return {
     "CopilotC-Nvim/CopilotChat.nvim",
     build = "make tiktoken",
     opts = function(_, opts)
-      opts.model = "gemini-2.0-flash-001"
       opts.sticky = {
         "No JS build step, scripts are included via script tags.",
         "'fp' variable is lodash/fp.",
