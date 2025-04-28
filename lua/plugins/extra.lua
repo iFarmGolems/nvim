@@ -34,6 +34,10 @@ return {
             host = "10.111.8.26",
             label = "Bosna 1025 DEV",
           },
+          {
+            host = "10.111.2.42",
+            label = "IMSASAN 991 DEV",
+          },
         },
         mapping = {
           {
