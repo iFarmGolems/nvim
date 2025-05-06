@@ -38,6 +38,10 @@ return {
             host = "10.111.2.42",
             label = "IMSASAN 991 DEV",
           },
+          {
+            host = "192.168.151.90",
+            label = "IMSASAN 991 PROD",
+          },
         },
         mapping = {
           {
