@@ -66,6 +66,13 @@ return {
   } },
 
   {
+    "folke/persistence.nvim",
+    opts = {
+      need = 0,
+    },
+  },
+
+  {
     "LazyVim/LazyVim",
     opts = {
       kind_filter = {
