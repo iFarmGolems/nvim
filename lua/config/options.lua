@@ -33,3 +33,7 @@ vim.api.nvim_create_user_command("CopyPath", function()
   vim.fn.setreg("+", path_to_copy)
   print("Copied: " .. path_to_copy)
 end, {})
+
+vim.api.nvim_create_user_command("EditProjects", function()
+  vim.cmd("edit " .. vim.fn.expand("~/.local/share/nvim/project_nvim/project_history"))
+end, {})
