@@ -48,6 +48,7 @@ return {
             fs = "/home/patrik/develop/repos/mis/sw/ims/ims4/Web/src/main/webapp",
             -- remote = "/var/www/app.ims/ims",
             remote = "/opt/ims/tomcat/webapps/ims",
+            -- remote = "/var/www/app.ims/ims",
           },
         },
       })
