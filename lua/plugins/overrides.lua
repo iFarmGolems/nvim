@@ -34,13 +34,6 @@ return {
   },
 
   {
-    "ibhagwan/fzf-lua",
-    opts = function(_, opts)
-      opts.files.actions["default"] = require("fzf-lua.actions").file_edit
-    end,
-  },
-
-  {
     "folke/snacks.nvim",
     opts = function(_, opts)
       opts.indent = { enabled = false }
