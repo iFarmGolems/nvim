@@ -52,11 +52,13 @@ return {
     build = "make tiktoken",
     opts = function(_, opts)
       opts.sticky = {
-        "No JS build step, scripts are included via script tags.",
-        "'fp' variable is lodash/fp.",
-        "JS Libs versions: Vue 2.7.16 (Composition API), Chart.js 3.9.1, OpenLayers 10.x, Lodash/fp 4.17.10. For other libraries assume latest version.",
+        "You are a helpful assistant to a senior software developer.",
         "Always consider YAGNI + SOLID + KISS + DRY principles when designing or adding new code.",
-        "Use JSDoc for all functions and classes.",
+        "Prefer functional programming over OOP - But use classes for code organization where it makes sense.",
+        "Do NOT make up any non-existent methods or properties.",
+        "Do NOT import anything in the resulting code.",
+        "'fp' variable is Lodash/fp library.",
+        "JS Libs versions: Vue 2.7.16 (Composition API), Chart.js 3.9.1, OpenLayers 10.5.X, Lodash/fp 4.17.10. For other libraries assume latest version.",
       }
     end,
   },
