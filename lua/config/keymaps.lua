@@ -6,7 +6,7 @@ vim.keymap.del({ "n", "v" }, "<leader>sr")
 
 -- normal mode
 vim.keymap.set("n", "<leader>sri", function()
-  require("grug-far").open({ prefills = { search = vim.fn.expand("<cword>"), filesFilter = vim.fn.expand("%") } })
+  require("grug-far").open({ prefills = { search = vim.fn.expand("<cword>"), paths = vim.fn.expand("%") } })
 end, {
   desc = "Replace current word in current file",
 })
@@ -19,7 +19,7 @@ end, {
 
 -- visual mode
 vim.keymap.set("v", "<leader>sri", function()
-  require("grug-far").with_visual_selection({ prefills = { filesFilter = vim.fn.expand("%") } })
+  require("grug-far").with_visual_selection({ prefills = { paths = vim.fn.expand("%") } })
 end, {
   desc = "Replace visual selection in current file",
 })
