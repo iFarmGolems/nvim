@@ -19,6 +19,8 @@ vim.opt.autoindent = true
 -- vim.opt.termguicolors = true
 vim.opt.list = false
 vim.opt.colorcolumn = "81"
+vim.opt.scrolloff = 10
+vim.wo.signcolumn = "no"
 
 -- User Commands ---------------------------------------------------------------
 vim.api.nvim_create_user_command("CopyPath", function()
