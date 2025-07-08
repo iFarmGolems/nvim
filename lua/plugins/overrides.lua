@@ -24,11 +24,9 @@ return {
   {
     "ahmedkhalf/project.nvim",
     opts = function(_, opts)
-      opts.manual_mode = true
+      opts.manual_mode = false
       opts.silent_chdir = false
       opts.detection_methods = { "pattern" }
-      -- opts.scope_chdir = "tab"
-      -- opts.ignore_lsp = { "jsonls" }
       opts.patterns = { "package.json", "tsconfig.json", "jsconfig.json", ".git" }
     end,
   },
