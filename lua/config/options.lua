@@ -20,6 +20,7 @@ vim.opt.autoindent = true
 vim.opt.list = false
 vim.opt.colorcolumn = "81"
 vim.opt.scrolloff = 10
+vim.o.linespace = 4
 vim.wo.signcolumn = "no"
 
 -- User Commands ---------------------------------------------------------------
