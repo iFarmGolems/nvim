@@ -29,7 +29,7 @@ vim.opt.list = false
 vim.opt.colorcolumn = "81"
 vim.opt.scrolloff = 10
 vim.o.linespace = 4
-vim.wo.signcolumn = "no"
+vim.wo.signcolumn = "auto:1"
 
 -- User Commands ---------------------------------------------------------------
 vim.api.nvim_create_user_command("CopyPath", function()
