@@ -28,7 +28,7 @@ vim.opt.autoindent = true
 vim.opt.list = false
 vim.opt.colorcolumn = "81"
 vim.opt.scrolloff = 10
-vim.o.linespace = 4
+vim.o.linespace = 3
 vim.wo.signcolumn = "auto:1"
 vim.o.guifont = "Comic Code Ligatures:h11"
 
